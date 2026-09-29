@@ -1,0 +1,21 @@
+test_case_id,title,description,priority
+TC-001,Verify successful registration with valid details,"Register a new account using a unique, valid email address and a compliant password, and verify the account is created successfully.",High
+TC-002,Verify registration rejected for duplicate email,Attempt to register a new account using an email address that is already registered and verify the system blocks it with a clear error.,Medium
+TC-003,Verify registration fails with invalid email format,Attempt to register using a malformed email address and verify the system rejects the input with a validation error.,Low
+TC-004,Verify successful login with valid credentials,Log in using a valid registered email address and correct password and verify the user reaches their account dashboard.,High
+TC-005,Verify login rejected with incorrect password,Attempt to log in using a valid email but an incorrect password and verify the system displays a clear error message.,High
+TC-006,Verify login rejected with unregistered username,Attempt to log in using an email address that is not registered and verify the system displays a clear error message.,High
+TC-007,Verify password reset email is sent,Request a password reset for a registered email address and verify a reset email is sent to that address.,High
+TC-008,Verify password reset link expires,"Request a password reset, wait past the link's validity window, and verify the expired link can no longer be used.",Medium
+TC-009,Verify new account requires email verification,Register a new account and verify the user cannot fully access the system until the verification link is confirmed.,Medium
+TC-010,Verify unverified account access is restricted,Attempt to access restricted account features before completing email verification and verify access is denied.,Medium
+TC-011,Verify account locks after failed login attempts,Attempt to log in with an incorrect password five consecutive times and verify the account becomes locked.,High
+TC-012,Verify locked account cannot log in with correct password,"After an account is locked, attempt to log in using the correct password and verify access is still denied.",High
+TC-013,Verify session expires after inactivity,"Log in successfully, remain inactive for 30 minutes, and verify the session has expired and requires re-authentication.",Medium
+TC-014,Verify password meets complexity requirements,Attempt to set a password that meets the minimum length and character variety requirements and verify it is accepted.,Medium
+TC-015,Verify weak password rejected during registration,Attempt to register using a password that does not meet the minimum complexity rules and verify it is rejected.,Medium
+TC-016,Verify user can update profile display name,Update the display name and contact details in the user profile settings and verify the changes are saved.,Low
+TC-017,Verify admin pages blocked for standard role,"Log in as a standard (non-admin) user and attempt to access an administrative page, verifying access is denied.",High
+TC-018,Verify logout terminates active session,Log out of an active session and verify the session is terminated and protected pages are no longer accessible.,Medium
+TC-019,Verify password field masks input characters,Type into the password field during login and verify the characters are masked on screen as they are entered.,Low
+TC-020,Verify terms and conditions checkbox is displayed,Open the registration page and verify a terms and conditions checkbox is displayed and must be checked to proceed.,Low
