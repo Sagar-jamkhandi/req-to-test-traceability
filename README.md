@@ -5,7 +5,7 @@ classifies coverage as **Strong / Partial / Missing**, and helps a QA
 engineer quickly see where test planning attention is needed.
 
 Built for a "Requirement to Test Traceability Builder" take-home
-challenge (target scope: ~15 requirements / ~20 test cases, 8–10 hour
+challenge (target scope: ~15 requirements / ~12 test cases,
 build budget).
 
 ---
